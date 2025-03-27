@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: grid;
+  grid-template-rows: 5vh 90vh 5vh;
+  grid-template-areas: "." "hero" "footer";
+  background-color: var(--Grey900);
+}

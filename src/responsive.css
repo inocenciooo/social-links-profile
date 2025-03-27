@@ -1,0 +1,7 @@
+@media (max-width: 900px) {
+  body {
+    display: grid;
+    grid-template-rows: 10vh;
+    grid-template-areas: "." "hero" "footer";
+  }
+}

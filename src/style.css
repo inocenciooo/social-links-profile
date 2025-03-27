@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "inter";
+  src: url(../assets/fonts/Inter-VariableFont_slntw-ght.ttf);
+}
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+}
+
+.hero {
+  grid-area: hero;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-family: "inter";
+}
+
+.hero .card {
+  background-color: var(--Grey800);
+  color: var(--White);
+  max-width: 40rem;
+  display: grid;
+  grid-template-rows: 1.2fr 2fr;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.hero .card .user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+}
+.hero .card .user div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .card .user div > p a {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.hero .card .user img {
+  border-radius: 100%;
+  width: 30%;
+}
+
+.hero .card a {
+  text-decoration: none;
+  color: var(--Green);
+}
+
+.hero .card .social-medias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .card .social-medias ul li {
+  background-color: var(--Grey700);
+  text-align: center;
+  padding: 1.2rem 10rem;
+  border-radius: 0.7rem;
+  margin: 2rem 0;
+}
+.hero .card .social-medias ul li a {
+  color: var(--White);
+  display: block;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.hero .card .social-medias ul li:hover,
+.hero .card .social-medias ul li:hover a {
+  background-color: var(--Green);
+  color: var(--Grey900);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.attribution {
+  grid-area: footer;
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--White);
+  margin-top: 5vh;
+  padding-bottom: 3vh;
+  font-family: inter;
+}
+
+.attribution a {
+  color: var(--Green);
+}
